@@ -265,9 +265,10 @@ font-family: 'Roboto Slab', serif; */
     }
 }
 
-@media screen and (max-width : 780px){
+@media only screen and (min-width: 300px) and (max-width : 900px){
     .container {
         height: 1600px ;
+        width: 1200px;
     }
 
     .sidebar {
