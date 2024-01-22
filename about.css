@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Noto+Serif:wght@400;500&family=Roboto+Slab&display=swap");
-/* 
-font-family: 'Mulish', sans-serif;
-font-family: 'Noto Serif', serif;
-font-family: 'Roboto Slab', serif; */
 
 * {
     margin: 0;
@@ -11,19 +7,17 @@ font-family: 'Roboto Slab', serif; */
 
 .container {
     display: flex;
-    /* background-color: #7f7d7d; */
-    /* background-color: #d5d5decb; */
     background-color: #fffff0;
     height: 551px;
 }
 
 .sidebar {
     background-color: dodgerblue;
-    /* position: absolute; */
+    position: absolute;
     font-family: "Noto Serif", serif;
     width: 160px;
     height: 551px;
-    transition: transform 0.2s ease-in;  
+    transition: transform 0.2s ease-in;
 }
 
 .sidebar nav {
@@ -35,13 +29,14 @@ font-family: 'Roboto Slab', serif; */
     font-size: 20px;
     padding: 25px 0;
 }
-.sidebar nav li a{
+
+.sidebar nav li a {
     text-decoration: none;
     color: rgb(10, 9, 9);
-    
+
 }
 
-.sidebar nav li a:hover{
+.sidebar nav li a:hover {
     cursor: pointer;
     font-size: 22px;
     transition: 0.3s ease;
@@ -49,138 +44,154 @@ font-family: 'Roboto Slab', serif; */
     text-shadow: 0px 0px 20px black;
 }
 
-.sidebarGo{
+.sidebarGo {
     transform: translate(-159px, 0px);
     position: absolute;
 }
+
 .main {
     /* background-color: #98f2bf; */
-    width: 100vw;
+    width: 80vw;
     padding: 0px 10px;
+    margin-left: 12vw;
 }
 
-.hamBurger{
+.hamBurger {
     position: absolute;
     top: 3px;
     left: 1px;
     background: none;
     cursor: pointer;
 }
-.ham{
+
+.ham {
     margin-left: 5px;
     background-color: dodgerblue;
     border-radius: 4px;
-}
-.cross{
-    margin-left: 120px;
-    margin-top: 5px;
-    /* top: 5px; */
+    width: 25px;
 }
 
-.aboutMe{
+.cross {
+    margin-left: 130px;
+    margin-top: 5px;
+    width: 16px;
+}
+
+.aboutMe {
     margin: 20px 10px;
     margin-left: 30px;
     opacity: 0;
-    animation: slideRight 1s ease forwards;;
+    animation: slideRight 1s ease forwards;
+    ;
 }
 
-.aboutMe h1{
+.aboutMe h1 {
     font-family: 'Noto Serif', serif;
     padding: 10px 0;
 }
 
-.aboutMe h1 span{
+.aboutMe h1 span {
     color: dodgerblue;
 }
 
-.aboutMe p{
+.aboutMe p {
     font-family: sans-serif;
     padding: 10px 0;
 }
 
-.skills{
+.skills {
     margin-top: 1rem;
     font-family: 'Noto Serif', serif;
 }
-.Technical-bars{
+
+.Technical-bars {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    /* background-color: #fff; */
 }
 
-.Technical-bars .bar{
+.Technical-bars .bar {
     margin-top: 1rem;
     width: 80%;
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
 
-.bar{
+.bar {
     font-family: 'Mulish', sans-serif;
 }
-.bar .skill_nme{
-    margin-bottom: 5px ;
+
+.bar .skill_nme {
+    margin-bottom: 5px;
 }
 
-.Technical-bars .bar .skill_nme span{
+.Technical-bars .bar .skill_nme span {
     font-size: 12px;
     font-weight: 600;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
 
-.Technical-bars .bar .progress-line{
+.Technical-bars .bar .progress-line {
     position: relative;
     border-radius: 10px;
     width: 100%;
     height: 5px;
     background-color: #000;
-    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
     transform: scaleX(0);
     transform-origin: left;
 }
 
-@keyframes animate{
-    100%{
+@keyframes animate {
+    100% {
         transform: scaleX(1);
     }
 }
 
-.Technical-bars .bar .progress-line span{
+.Technical-bars .bar .progress-line span {
     height: 100%;
     background-color: dodgerblue;
     position: absolute;
     border-radius: 10px;
-    animation: animate 0.8s 0.3s cubic-bezier(1,0,0.5,1) forwards;
+    animation: animate 0.8s 0.3s cubic-bezier(1, 0, 0.5, 1) forwards;
     transform: scaleX(0);
     transform-origin: left;
 }
 
-.progress-line.html span{
+.progress-line.html span {
     width: 85%;
 }
-.progress-line.css span{
+
+.progress-line.css span {
     width: 80%;
 }
-.progress-line.bootstrap span{
+
+.progress-line.bootstrap span {
     width: 70%;
 }
-.progress-line.javascript span{
+
+.progress-line.javascript span {
     width: 60%;
 }
-.progress-line.react span{
+
+.progress-line.react span {
     width: 60%;
 }
-.progress-line.python span{
-    width: 40%;
-}
-.progress-line.java span{
-    width: 40%;
-}
-.progress-line.mysql span{
+
+.progress-line.python span {
     width: 40%;
 }
 
-.progress-line span::after{
+.progress-line.java span {
+    width: 40%;
+}
+
+.progress-line.mysql span {
+    width: 40%;
+}
+
+.progress-line span::after {
     position: absolute;
     padding: 1px 8px;
     background-color: #000;
@@ -193,32 +204,39 @@ font-family: 'Roboto Slab', serif; */
     opacity: 0;
 }
 
-.progress-line.html span::after{
+.progress-line.html span::after {
     content: "85%";
 }
-.progress-line.css span::after{
+
+.progress-line.css span::after {
     content: "80%";
 }
-.progress-line.bootstrap span::after{
+
+.progress-line.bootstrap span::after {
     content: "70%";
 }
-.progress-line.javascript span::after{
+
+.progress-line.javascript span::after {
     content: "60%";
 }
-.progress-line.react span::after{
+
+.progress-line.react span::after {
     content: "60%";
 }
-.progress-line.python span::after{
-    content: "40%";
-}
-.progress-line.java span::after{
-    content: "40%";
-}
-.progress-line.mysql span::after{
+
+.progress-line.python span::after {
     content: "40%";
 }
 
-.progress-line span::before{
+.progress-line.java span::after {
+    content: "40%";
+}
+
+.progress-line.mysql span::after {
+    content: "40%";
+}
+
+.progress-line span::before {
     content: "";
     position: absolute;
     width: 0;
@@ -234,23 +252,101 @@ font-family: 'Roboto Slab', serif; */
 }
 
 @keyframes showText {
-    0%{
+    0% {
         transform: translateX(-100px);
         opacity: 0;
     }
-    100%{
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-@keyframes slideRight {
-    0%{
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100%{
+
+    100% {
         transform: translateX(0px);
         opacity: 1;
     }
 }
 
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .container {
+        height: 1200px;
+    }
+
+    .sidebar {
+        height: 1200px;
+        width: 40%;
+        z-index: 2;
+    }
+
+    .sidebar nav li {
+        font-size: 25px;
+        padding: 50px 10px;
+        margin-top: 20px;
+    }
+
+    .sidebarnav li a {
+        padding-top: 20px;
+    }
+    .sidebarGo{
+        transform: translate(-260px, 0px);
+    }
+    .sec {
+        z-index: 10;
+    }
+    .ham {
+        width: 30px;
+    }
+    .cross {
+        margin-left: 140px;
+        width: 18px;
+    }
+    .aboutMe{
+        font-size: 22px;
+    }
+    .Technical-bars{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width : 801px){
+    .cpntainer{
+        height: 100vh;
+        width: 100vw;
+    }
+    .sidebar{
+        height: 100vh;
+        width: 200px;
+        z-index: 2;
+    }
+    .sidebar nav li {
+        font-size: 20px;
+        padding: 25px 10px;
+        margin-top: 20px;
+    }
+
+    .sidebarnav li a {
+        padding-top: 10px;
+    }
+    .sidebarGo{
+        transform: translate(-260px, 0px);
+    }
+    .sec {
+        z-index: 10;
+    }
+    .ham {
+        width: 30px;
+    }
+    .cross {
+        margin-left: 150px;
+        width: 18px;
+    }
+}
