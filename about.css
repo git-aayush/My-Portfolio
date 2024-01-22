@@ -318,9 +318,8 @@
 }
 
 @media screen and (min-width : 700px) and (max-width : 1200px){
-    .cpntainer{
+    .container{
         height: 100vh;
-        width: 100vw;
     }
     .sidebar{
         height: 100vh;
