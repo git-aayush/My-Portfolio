@@ -12,9 +12,6 @@ font-family: 'Roboto Slab', serif; */
 }
 .container {
     display: flex;
-    /* background-color: #7f7d7d; */
-    /* background-color: #d5d5decb; */
-    /* background-color: #fffff0; */
     background-color: #FCEDDA;
     height: 551px;
 }
@@ -67,7 +64,6 @@ font-family: 'Roboto Slab', serif; */
     margin-left: 130px;
     width: 16px;
     margin-top: 5px;
-    /* top: 5px; */
 }
 
 .info-container {
@@ -452,8 +448,6 @@ font-family: 'Roboto Slab', serif; */
         height: 50px;
         font-size: 30px;
     }
-    
-
 }
 
 @media screen and (min-width: 1001px) {

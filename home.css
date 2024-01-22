@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Noto+Serif:wght@400;500&family=Roboto+Slab&display=swap");
 
-/* 
-font-family: 'Mulish', sans-serif;
-font-family: 'Noto Serif', serif;
-font-family: 'Roboto Slab', serif; */
 
 * {
     margin: 0;
@@ -12,9 +8,6 @@ font-family: 'Roboto Slab', serif; */
 
 .container {
     display: flex;
-    /* background-color: #7f7d7d; */
-    /* background-color: #d5d5decb; */
-    /* background-color: #f1faee; */
     background-color: #2b2d42;
     height: 551px;
 }
@@ -229,3 +222,265 @@ font-family: 'Roboto Slab', serif; */
 
 }
 
+@media screen and (max-width: 549px){
+    .container {
+        height: 1200px ;
+        width: fit-content;
+    }
+    .sidebar {
+        height: 1200px; 
+        width: 50%; 
+        z-index: 2;
+    }
+    .sidebar nav li {
+        list-style: none;
+        font-size: 26px;
+        padding: 50px 10px;
+        margin-top: 20px;
+    }
+    .sidebar nav li a{
+        text-decoration: none;
+        color: rgb(10, 9, 9);  
+        padding-top: 20px;
+    }
+    .sidebarGo{
+        transform: translate(-260px, 0px);
+        position: absolute;
+    }
+    .sec{
+        z-index: 10;
+    }
+    .ham{
+        width: 30px;
+        background-color: dodgerblue;
+    }
+    .cross{
+        margin-left: 160px;
+        width: 18px;
+    }
+
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        padding-left: 1.5rem;
+    }
+
+    .div-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        width: fit-content;
+    }
+    .hello {
+        font-size: 60px;
+    }
+    .name {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .about {
+        font-size: 28px;
+    }
+    
+    .more-about{
+        margin: 15px 0 ;
+        font-size: 20px;
+        width: 250px;
+    }
+    .buttons{
+        margin: 2rem 0;
+    }
+    
+    .buttons button {
+        padding: 10px 10px;
+        border-radius: 15px;
+        font-size: 15px;
+    }
+    .div-img{
+        height: 300px;
+        width: 300px; 
+        margin-top: 5rem;
+        margin-left: 0.7rem;
+    }
+    .logo a:nth-child(1n){
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+}
+
+
+@media  screen and (min-width : 550px) and (max-width : 1000px){
+    .container {
+        height: 1600px;
+        width: 1200px;
+    }
+
+    .sidebar { 
+        height: 1600px;
+        width: 200px; 
+    }
+    .sidebar nav li {
+        list-style: none;
+        font-size: 25px;
+        padding: 30px 10px;
+        margin-top: 20px;
+    }
+    .sidebar nav li a{
+        text-decoration: none;
+        color: rgb(10, 9, 9);  
+        padding-top: 20px;
+    }
+    .sidebarGo{
+        transform: translate(-200px, 0px);
+        position: absolute;
+    }
+    .ham{
+        margin-left: 10px;
+        background-color: dodgerblue;
+        border-radius: 4px;
+        width: 40px;
+    }
+    .cross{
+        margin-left: 170px;
+        margin-top: 5px;
+        width: 20px;
+    }
+    
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        margin-left: 8rem;
+    }
+
+    .div-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.1rem;
+        width: 100vw;
+    }
+    .hello {
+        font-size: 80px;
+    }
+    .name {
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .about {
+        font-size: 40px;
+    }
+    
+    .more-about{
+        margin: 15px 0 ;
+        font-size: 20px;
+        /* width: 350px; */
+    }
+    .buttons{
+        margin: 2rem 0;
+    }
+    
+    .buttons button {
+        padding: 14px 17px;
+        border-radius: 15px;
+        font-size: 20px;
+    }
+
+    .div-img{
+        height: 400px;
+        width: 400px; 
+        margin-top: 6rem;
+        margin-left: 1rem;
+    }
+    .logo{
+        margin-left: 1rem;
+    }
+    .logo a:nth-child(1n){
+        width: 60px;
+        height: 60px;
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (min-width: 1001px) {
+    .container {
+        height: 100vh;
+        width: 100vw;
+    }
+    .sidebar {
+        height: 100vh; 
+        width: 200px; 
+    }
+    .sidebar nav li {
+        list-style: none;
+        font-size: 22px;
+        padding: 20px 10px;
+        margin-top: 20px;
+    }
+    .sidebar nav li a{
+        text-decoration: none;
+        color: rgb(10, 9, 9);  
+        padding-top: 20px;
+    }
+    .sidebarGo{
+        transform: translate(-200px, 0px);
+        position: absolute;
+    }
+    .ham{
+        margin-left: 10px;
+        background-color: dodgerblue;
+        border-radius: 4px;
+        width: 30px;
+    }
+    .cross{
+        margin-left: 170px;
+        margin-top: 5px;
+        width: 15px;
+    }
+    .info-container {
+        display: flex;
+        margin-left: 2rem;
+    }
+    .div-info{
+        gap: 0.6rem;
+    }
+    .hello {
+        font-size: 50px;
+    }
+    .name {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .about {
+        font-size: 25px;
+    }
+    
+    .more-about{
+        margin: 15px 0 ;
+        font-size: 14px;
+        width: 400px;
+    }
+    
+    .buttons button {
+        padding: 8px 13px;
+        border-radius: 15px;
+        font-size: 14px;
+    }
+
+    .div-img{
+        height: 330px;
+        width: 330px; 
+        margin-right: 50px;
+    }
+    .logo a:nth-child(1n){
+        width: 40px;
+        height: 40px;
+        font-size: 23px;
+    }
+
+}
