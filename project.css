@@ -1,29 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Noto+Serif:wght@400;500&family=Roboto+Slab&display=swap");
-/* 
-font-family: 'Mulish', sans-serif;
-font-family: 'Noto Serif', serif;
-font-family: 'Roboto Slab', serif; */
 
 * {
     margin: 0;
     padding: 0;
 }
+
 .container {
     display: flex;
-    /* background-color: #7f7d7d; */
-    /* background-color: #d5d5decb; */
-    /* background-color: #fffff0; */
-    background-color:  #FBEAEB;
+    background-color: #FBEAEB;
     height: auto;
 }
 
 .sidebar {
     background-color: #4253aa;
-    /* position: absolute; */
+    position: absolute;
     font-family: "Noto Serif", serif;
     width: 160px;
     height: auto;
-    transition: transform 0.2s ease-in;  
+    transition: transform 0.2s ease-in;
 }
 
 .sidebar nav {
@@ -35,13 +29,14 @@ font-family: 'Roboto Slab', serif; */
     font-size: 20px;
     padding: 25px 0;
 }
-.sidebar nav li a{
+
+.sidebar nav li a {
     text-decoration: none;
     color: rgb(10, 9, 9);
-    
+
 }
 
-.sidebar nav li a:hover{
+.sidebar nav li a:hover {
     cursor: pointer;
     font-size: 22px;
     transition: 0.3s ease;
@@ -49,45 +44,49 @@ font-family: 'Roboto Slab', serif; */
     text-shadow: 0px 0px 20px black;
 }
 
-.sidebarGo{
+.sidebarGo {
     transform: translate(-159px, 0px);
     position: absolute;
 }
+
 .main {
-    /* background-color: #98f2bf; */
     width: 100vw;
     margin: 20px 20px 10px 40px;
 }
 
-.hamBurger{
+.hamBurger {
     position: absolute;
     top: 3px;
     left: 1px;
     background: none;
     cursor: pointer;
 }
-.ham{
+
+.ham {
     margin-left: 5px;
     background-color: #4253aa;
     border-radius: 4px;
 }
-.cross{
+
+.cross {
     margin-left: 115px;
     margin-top: 5px;
-    /* top: 5px; */
 }
-.projectsContainer{
+
+.projectsContainer {
     margin-left: 20px;
     padding: 0 10px;
 }
-.projectsContainer h1{
+
+.projectsContainer h1 {
     font-family: 'Noto Serif', serif;
     padding: 10px 0;
     text-align: center;
     opacity: 0;
     animation: slideRight 1.2s linear forwards;
 }
-.projectName h3{
+
+.projectName h3 {
     font-family: 'Noto Serif', serif;
     padding-top: 1rem;
     color: #4253aa;
@@ -95,13 +94,14 @@ font-family: 'Roboto Slab', serif; */
     animation: slideTop 1s ease forwards;
 }
 
-.projectName p{
+.projectName p {
     font-family: 'Mulish', sans-serif;
     padding: 0px 10px;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
 }
-.projectName a{
+
+.projectName a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -118,39 +118,225 @@ font-family: 'Roboto Slab', serif; */
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
-.projectName a:hover{
+
+.projectName a:hover {
     background-color: purple;
     color: white;
     box-shadow: 0px 0px 29px purple;
 }
 
 @keyframes slideRight {
-    0%{
+    0% {
         transform: translateX(-100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0px);
         opacity: 1;
     }
 }
+
 @keyframes slideLeft {
-    0%{
+    0% {
         transform: translateX(100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0px);
         opacity: 1;
     }
 }
+
 @keyframes slideTop {
-    0%{
+    0% {
         transform: translateY(-100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateY(0px);
         opacity: 1;
     }
+}
+
+
+
+
+@media screen and (max-width: 549px) {
+    .container {
+        height: 1200px;
+        width: fit-content;
+    }
+
+    .sidebar {
+        height: 1200px;
+        width: 50%;
+        z-index: 2;
+    }
+
+    .sidebar nav li {
+        list-style: none;
+        font-size: 26px;
+        padding: 50px 10px;
+        margin-top: 20px;
+    }
+
+    .sidebar nav li a {
+        text-decoration: none;
+        color: rgb(10, 9, 9);
+        padding-top: 20px;
+    }
+
+    .sidebarGo {
+        transform: translate(-260px, 0px);
+        position: absolute;
+    }
+
+    .sec {
+        z-index: 10;
+    }
+
+    .ham {
+        width: 30px;
+    }
+
+    .cross {
+        margin-left: 160px;
+        width: 18px;
+    }
+
+    .projectsContainer h1 {
+        font-size: 2.5rem;
+    }
+
+    .projectName p {
+        padding-left: 2rem;
+    }
+
+    .projectName a {
+        margin-left: 2rem;
+    }
+}
+
+@media  screen and (min-width : 550px) and (max-width : 1000px){
+    .container {
+        height: 1600px;
+        width: 1200px;
+    }
+
+    .sidebar { 
+        height: 1600px;
+        width: 250px; 
+        z-index: 2;
+    }
+    .sidebar nav li {
+        list-style: none;
+        font-size: 30px;
+        padding: 40px 10px;
+        margin-top: 20px;
+    }
+    .sidebar nav li a{
+        text-decoration: none;
+        color: rgb(10, 9, 9);  
+        padding-top: 20px;
+    }
+    .sidebarGo{
+        transform: translate(-250px, 0px);
+        position: absolute;
+    }
+    .sec{
+        z-index: 10;
+    }
+    .ham{
+        width: 40px;
+    }
+    .cross{
+        margin-left: 170px;
+        margin-top: 5px;
+        width: 25px;
+    }
+    .main{
+        width: 80vw;
+        margin-left: 20vw;
+    }
+    .projectsContainer h1 {
+        font-size: 2.8rem;
+    }
+    .projectName h3{
+        font-size: 1.4rem;
+    }
+
+    .projectName p {
+        padding-left: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .projectName a {
+        margin-left: 2rem;
+        width: 30px;
+        height: 30px;
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media screen and (min-width: 1001px) {
+    .container {
+        height: fit-content;
+    }
+    .sidebar {
+        height: fit-content; 
+        width: 250px; 
+        z-index: 2;
+    }
+    .sidebar nav li {
+        list-style: none;
+        font-size: 25px;
+        padding: 40px 10px;
+        margin-top: 20px;
+    }
+    .sidebar nav li a{
+        text-decoration: none;
+        color: rgb(10, 9, 9);  
+        padding-top: 20px;
+    }
+    .sidebarGo{
+        transform: translate(-250px, 0px);
+        position: absolute;
+    }
+    .ham{
+        width: 35px;
+    }
+    .cross{
+        margin-left: 180px;
+        margin-top: 5px;
+        width: 20px;
+    }
+    .sec{
+        z-index: 10;
+    }
+    .main{
+        margin-left: 10vw;
+    }
+    .projectsContainer h1 {
+        font-size: 2.8rem;
+    }
+    .projectName h3{
+        font-size: 1.4rem;
+    }
+
+    .projectName p {
+        padding-left: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .projectName a {
+        margin-left: 2rem;
+        width: 30px;
+        height: 30px;
+        font-size: 1.5rem;
+    }
+
 }
