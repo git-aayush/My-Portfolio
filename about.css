@@ -276,7 +276,7 @@
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 690px) {
     .container {
         height: 1200px;
     }
@@ -297,16 +297,16 @@
         padding-top: 20px;
     }
     .sidebarGo{
-        transform: translate(-260px, 0px);
+        transform: translate(-350px, 0px);
     }
     .sec {
         z-index: 10;
     }
     .ham {
-        width: 30px;
+        width: 35px;
     }
     .cross {
-        margin-left: 140px;
+        margin-left: 150px;
         width: 18px;
     }
     .aboutMe{
@@ -317,7 +317,7 @@
     }
 }
 
-@media screen and (min-width : 801px){
+@media screen and (min-width : 700px) and (max-width : 1200px){
     .cpntainer{
         height: 100vh;
         width: 100vw;
@@ -337,7 +337,7 @@
         padding-top: 10px;
     }
     .sidebarGo{
-        transform: translate(-260px, 0px);
+        transform: translate(-300px, 0px);
     }
     .sec {
         z-index: 10;
@@ -346,7 +346,7 @@
         width: 30px;
     }
     .cross {
-        margin-left: 150px;
+        margin-left: 160px;
         width: 18px;
     }
 }
