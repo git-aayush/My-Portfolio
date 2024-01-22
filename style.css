@@ -26,6 +26,7 @@ font-family: 'Roboto Slab', serif; */
     width: 160px;
     height: 551px;
     transition: transform 0.2s ease-in;  
+   
 }
 
 .sidebar nav {
@@ -265,7 +266,102 @@ font-family: 'Roboto Slab', serif; */
     }
 }
 
-@media only screen and (min-width: 300px) and (max-width : 900px){
+
+
+
+
+
+
+@media screen and (max-width: 549px){
+    .container {
+        height: 1600px ;
+        width: fit-content;
+    }
+    .sidebar {
+        height: 1600px; 
+        width: 50%; 
+        z-index: 2;
+    }
+    .sidebar nav li {
+        list-style: none;
+        font-size: 26px;
+        padding: 50px 10px;
+        margin-top: 20px;
+    }
+    .sidebar nav li a{
+        text-decoration: none;
+        color: rgb(10, 9, 9);  
+        padding-top: 20px;
+    }
+    .sidebarGo{
+        transform: translate(-260px, 0px);
+        position: absolute;
+    }
+    .sec{
+        z-index: 10;
+    }
+    .ham{
+        width: 30px;
+    }
+    .cross{
+        margin-left: 160px;
+        width: 18px;
+    }
+
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        padding-left: 1.5rem;
+    }
+
+    .div-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        width: fit-content;
+    }
+    .hello {
+        font-size: 60px;
+    }
+    .name {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .about {
+        font-size: 30px;
+    }
+    
+    .more-about{
+        margin: 15px 0 ;
+        font-size: 20px;
+        width: 300px;
+    }
+    .buttons{
+        margin: 2rem 0;
+    }
+    
+    .buttons button {
+        padding: 10px 10px;
+        border-radius: 15px;
+        font-size: 15px;
+    }
+    .div-img{
+        height: 300px;
+        width: 300px; 
+        margin-top: 5rem;
+        margin-left: 0.7rem;
+    }
+    .logo a:nth-child(1n){
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+}
+
+@media  screen and (min-width : 550px) and (max-width : 1000px){
     .container {
         height: 1600px ;
         width: fit-content;
@@ -357,6 +453,86 @@ font-family: 'Roboto Slab', serif; */
         font-size: 30px;
     }
     
+
+}
+
+@media screen and (min-width: 1001px) {
+    .container {
+        height: 100vh;
+        width: fit-content;
+    }
+    .sidebar {
+        height: 100vh; 
+        width: 200px; 
+    }
+    .sidebar nav li {
+        list-style: none;
+        font-size: 22px;
+        padding: 20px 10px;
+        margin-top: 20px;
+    }
+    .sidebar nav li a{
+        text-decoration: none;
+        color: rgb(10, 9, 9);  
+        padding-top: 20px;
+    }
+    .sidebarGo{
+        transform: translate(-200px, 0px);
+        position: absolute;
+    }
+    .ham{
+        margin-left: 10px;
+        background-color: #EE4E34;
+        border-radius: 4px;
+        width: 30px;
+    }
+    .cross{
+        margin-left: 170px;
+        margin-top: 5px;
+        width: 15px;
+    }
+    .info-container {
+        display: flex;
+        margin-left: 2rem;
+        margin-top: 45px;
+    }
+    .div-info{
+        gap: 0.5rem;
+    }
+    .hello {
+        font-size: 50px;
+    }
+    .name {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .about {
+        font-size: 25px;
+    }
+    
+    .more-about{
+        margin: 15px 0 ;
+        font-size: 14px;
+        width: 400px;
+    }
+    
+    .buttons button {
+        padding: 8px 13px;
+        border-radius: 15px;
+        font-size: 14px;
+    }
+
+    .div-img{
+        height: 330px;
+        width: 330px; 
+        margin-top: 5rem;
+        margin-left: 0.7rem;
+    }
+    .logo a:nth-child(1n){
+        width: 40px;
+        height: 40px;
+        font-size: 23px;
+    }
 
 }
 
