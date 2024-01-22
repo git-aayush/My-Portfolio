@@ -312,7 +312,7 @@ font-family: 'Roboto Slab', serif; */
     .info-container {
         display: flex;
         flex-direction: column;
-        margin-top: 60px;
+        margin-top: 70px;
         padding-left: 1.5rem;
     }
 
@@ -320,7 +320,7 @@ font-family: 'Roboto Slab', serif; */
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 2rem;
+        gap: 1rem;
         width: fit-content;
     }
     .hello {
@@ -331,7 +331,7 @@ font-family: 'Roboto Slab', serif; */
         font-weight: bold;
     }
     .about {
-        font-size: 30px;
+        font-size: 28px;
     }
     
     .more-about{
@@ -364,7 +364,7 @@ font-family: 'Roboto Slab', serif; */
 @media  screen and (min-width : 550px) and (max-width : 1000px){
     .container {
         height: 1600px ;
-        width: 100vw;
+        width: 1200px
     }
 
     .sidebar {
