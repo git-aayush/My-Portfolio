@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Noto+Serif:wght@400;500&family=Roboto+Slab&display=swap");
+/* 
+font-family: 'Mulish', sans-serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Roboto Slab', serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    /* background-color: #7f7d7d; */
+    /* background-color: #d5d5decb; */
+    /* background-color: #fffff0; */
+    background-color: #FCF6F5;
+    height: 551px;
+}
+
+.sidebar {
+    background-color: #2BAE66;
+    /* position: absolute; */
+    font-family: "Noto Serif", serif;
+    width: 160px;
+    height: 551px;
+    transition: transform 0.2s ease-in;  
+}
+
+.sidebar nav {
+    padding: 27px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 20px;
+    padding: 25px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: rgb(10, 9, 9);
+    
+}
+
+.sidebar nav li a:hover{
+    cursor: pointer;
+    font-size: 22px;
+    transition: 0.3s ease;
+    color: whitesmoke;
+    text-shadow: 0px 0px 20px black;
+}
+
+.sidebarGo{
+    transform: translate(-159px, 0px);
+    position: absolute;
+}
+.main {
+    /* background-color: #98f2bf; */
+    width: 100vw;
+    padding: 0px 10px;
+}
+
+.hamBurger{
+    position: absolute;
+    top: 3px;
+    left: 1px;
+    background: none;
+    cursor: pointer;
+}
+.ham{
+    margin-left: 5px;
+    background-color: #2BAE66;
+    border-radius: 4px;
+}
+.cross{
+    margin-left: 120px;
+    margin-top: 5px;
+    /* top: 5px; */
+}
+
+.contact{
+    margin-top: 20px;
+    margin-left: 40px;
+    /* background-color: grey; */
+    width: 80vw;
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Mulish', sans-serif;
+}
+
+.query-head{
+    text-align: center;
+    opacity: 0;
+    animation: slideRight 1.2s linear forwards;
+}
+
+.query-form{
+    margin-top: 2rem;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    
+}
+
+.query-form form{
+   display: flex;
+   flex-direction: column;
+
+}
+
+.query-form form input,form textarea{
+    font-family: 'Noto Serif', serif;
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: black;
+    background: #d8d8dc;
+    margin: 0.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.query-form textarea{
+    resize: none;
+    height: 150px;
+}
+
+.query-form form .send{
+    padding: 8px 14px;
+    border-radius: 12px;
+    width: 10rem;
+    margin: 0.5rem 6px;
+    margin-left: 30%;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: dodgerblue;
+    color: whitesmoke;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 2px 3px 5px black;
+}
+
+.query-form form .send:hover{
+    color: dodgerblue;
+    background-color: whitesmoke;
+    box-shadow: 0 0 20px dodgerblue;
+}
+
+
+
+.contact-head{
+    text-align: center;
+    margin-bottom: 3rem;
+    opacity: 0;
+    animation: slideRight 1.2s linear forwards;
+}
+.contact-form-data{
+    margin-left: 5rem;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+
+}
+.contact-form-data .contact-form-data-icons {
+    font-size: 1.3rem;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.contact-form-data span{
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-family: 'Roboto Slab', serif; 
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+}
+
+.contact-form-data-logo {
+    margin: 10px 10px 20px 20px;
+    margin-left: 5rem;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.contact-form-data-logo a:first-child{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #0A66C2;
+    text-decoration: none;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 10px;
+    color: #0A66C2;
+}
+
+.contact-form-data-logo a:first-child:hover{
+    background-color: #0A66C2;
+    color: white;
+    box-shadow: 0 0 20px #0A66C2;
+}
+.contact-form-data-logo a:nth-child(2){
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #25D366;
+    text-decoration: none;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 10px;
+    color: #25D366;
+}
+
+.contact-form-data-logo a:nth-child(2):hover{
+    background-color: #25D366;
+    color: white;
+    box-shadow: 0 0 20px #25D366;
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .contact-form {
+    font-family: 'Mulish', sans-serif;
+    padding: 0 30px;
+    padding-top: 40px;
+    margin-left: 20px;
+} */
+/* margin-left: 140px; */
+
+/* .contact-form h1 {
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.contact-form form div {
+    margin: 10px 0 ;
+} */
+/* padding: 10px 0; */
+
+/* .email-text {
+    font-size: 8px;
+    color: midnightblue;
+
+}
+
+.mb-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.mb-3 label {
+    font-size: 17px;
+}
+
+.email-address {
+    width: 25vw;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.ph-number {
+    width: 25vw;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+form .form-check{
+    padding: 6px 0;
+}
+
+.btn-sm{
+    width: 80px;
+    padding: 5px 4px;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid rgb(8, 7, 7);
+    background-color: dodgerblue;
+    color: rgb(244, 253, 253);
+    margin: 10px 2px;
+    box-shadow: 2px 2px 8px black;
+}
+
+.btn-sm:hover{
+    color: dodgerblue;
+    background-color: white
+
+} */

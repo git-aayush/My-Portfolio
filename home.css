@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Noto+Serif:wght@400;500&family=Roboto+Slab&display=swap");
+
+/* 
+font-family: 'Mulish', sans-serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Roboto Slab', serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    /* background-color: #7f7d7d; */
+    /* background-color: #d5d5decb; */
+    /* background-color: #f1faee; */
+    background-color: #2b2d42;
+    height: 551px;
+}
+
+.sidebar {
+    background-color: #8d99ae;
+    position: absolute;
+    font-family: "Noto Serif", serif;
+    width: 160px;
+    height: 551px;
+    transition: transform 0.2s ease-in;
+}
+
+.sidebar nav {
+    padding: 27px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 20px;
+    padding: 25px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: rgb(10, 9, 9);
+}
+
+.sidebar nav li a:hover{
+    cursor: pointer;
+    font-size: 22px;
+    transition: 0.3s ease;
+    color: whitesmoke;
+    text-shadow: 0 0 20px black;
+}
+
+.sidebarGo{
+    transform: translate(-159px, 0px);
+    position: absolute;
+}
+.main {
+    /* background-color: #98f2bf; */
+    width: 100vw;
+    padding: 0px 10px;
+}
+
+.hamBurger{
+    position: absolute;
+    top: 3px;
+    left: 1px;
+    background: none;
+    cursor: pointer;
+}
+.ham{
+    margin-left: 10px;
+    background-color: #e5e5e5;
+    border-radius: 4px;
+
+}
+.cross{
+    margin-left: 130px;
+    margin-top: 5px;
+    /* top: 5px; */
+
+}
+
+.info-container {
+    display: flex;
+    /* height: 55vh; */
+    /* width: 80vw; */
+    /* background-color: rgb(16, 69, 69); */
+    margin: auto;
+    margin-top: 120px;
+    padding-left: 8rem;
+    justify-content: space-evenly;
+    color: #fffff0;
+}
+
+.div-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Noto Serif", serif;
+    /* background-color: rgb(231, 71, 71); */
+    width: 60%;
+    padding-left: 3rem;
+}
+
+.hello {
+    font-size: 50px;
+    font-family: 'Mulish', sans-serif;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+}
+
+.name {
+    font-size: 35px;
+    font-weight: bold;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.about {
+    font-size: 30px;
+    font-family: 'Mulish', sans-serif;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    text-shadow: 0 0 3px ;
+}
+
+
+.more-about{
+    margin: 15px 0 ;
+    font-size: 15px;
+    width: 480px;
+}
+
+.buttons{
+    margin-top: 15px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.buttons button {
+    padding: 8px 14px;
+    border-radius: 12px;
+    margin: 0 6px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: dodgerblue;
+    color: #fffff0;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 2px 3px 5px black;
+}
+
+.buttons button:hover{
+    color: dodgerblue;
+    background-color: #fffff0;
+    box-shadow: 0 0 20px dodgerblue;
+    transition: 0.3s ease;
+}
+
+.logo a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid rgb(36, 123, 209);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(36, 123, 209);
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.logo a:hover{
+    background:dodgerblue;
+    color: #fffff0;
+    box-shadow: 0 0 20px dodgerblue;
+}
+
+
+.div-img{
+    height: 300px;
+    width: 300px; 
+    border: 2px solid rgba(49, 45, 3, 0.048);
+    background-color: grey;
+    box-shadow: 0px 0px 50px dodgerblue;
+    border-radius: 60%;
+    background-image: url(image/dev.img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+    margin-right: 50px;
+
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@media screen and (max-width : 1200px){
+    .info-container{
+        flex-direction: column;
+        align-items: left;
+        
+    }
+    .div-info{
+        margin-bottom: 50px;
+    }
+
+}
+
