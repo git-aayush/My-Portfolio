@@ -32,17 +32,6 @@ font-family: 'Roboto Slab', serif; */
     padding: 27px;
 }
 
-.sidebar nav li {
-    list-style: none;
-    font-size: 20px;
-    padding: 25px 0;
-}
-.sidebar nav li a{
-    text-decoration: none;
-    color: rgb(10, 9, 9);
-    
-}
-
 .sidebar nav li a:hover{
     cursor: pointer;
     font-size: 24px;
@@ -56,7 +45,6 @@ font-family: 'Roboto Slab', serif; */
     position: absolute;
 }
 .main {
-    /* background-color: #98f2bf; */
     width: 100vw;
     padding: 0px 10px;
 }
@@ -72,18 +60,17 @@ font-family: 'Roboto Slab', serif; */
     margin-left: 10px;
     background-color: #EE4E34;
     border-radius: 4px;
+    width: 25px;
 }
 .cross{
     margin-left: 130px;
+    width: 16px;
     margin-top: 5px;
     /* top: 5px; */
 }
 
 .info-container {
     display: flex;
-    /* height: 55vh; */
-    /* width: 80vw; */
-    /* background-color: rgb(16, 69, 69); */
     margin: auto;
     margin-top: 120px;
     padding-left: 8rem;
@@ -95,7 +82,6 @@ font-family: 'Roboto Slab', serif; */
     flex-direction: column;
     justify-content: center;
     font-family: "Noto Serif", serif;
-    /* background-color: rgb(231, 71, 71); */
     width: 60%;
     padding-left: 3rem;
 }
@@ -281,11 +267,38 @@ font-family: 'Roboto Slab', serif; */
 
 @media screen and (max-width : 780px){
     .container {
-        height: 1200px ;
+        height: 1600px ;
     }
 
     .sidebar {
-        height: 1200px;  
+        height: 1600px; 
+        width: 200px; 
+    }
+    .sidebar nav li {
+        list-style: none;
+        font-size: 25px;
+        padding: 30px 10px;
+        margin-top: 20px;
+    }
+    .sidebar nav li a{
+        text-decoration: none;
+        color: rgb(10, 9, 9);  
+        padding-top: 20px;
+    }
+    .sidebarGo{
+        transform: translate(-200px, 0px);
+        position: absolute;
+    }
+    .ham{
+        margin-left: 10px;
+        background-color: #EE4E34;
+        border-radius: 4px;
+        width: 35px;
+    }
+    .cross{
+        margin-left: 170px;
+        margin-top: 5px;
+        width: 20px;
     }
     
     .info-container {
@@ -293,15 +306,13 @@ font-family: 'Roboto Slab', serif; */
         flex-direction: column;
         margin-top: 60px;
         margin-left: 5rem;
-         /* background-color: rgb(16, 69, 69); */
     }
 
     .div-info {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 0.7rem;
-        /* background-color: rgb(231, 71, 71); */
+        gap: 0.9rem;
         width: 100vw;
     }
     .hello {
