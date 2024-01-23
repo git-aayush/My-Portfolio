@@ -11,6 +11,7 @@
     height: auto;
 }
 
+/* SIDEBAR */
 .sidebar {
     background-color: #4253aa;
     position: absolute;
@@ -38,7 +39,7 @@
 
 .sidebar nav li a:hover {
     cursor: pointer;
-    font-size: 22px;
+    font-size: 23px;
     transition: 0.3s ease;
     color: whitesmoke;
     text-shadow: 0px 0px 20px black;
@@ -48,12 +49,6 @@
     transform: translate(-159px, 0px);
     position: absolute;
 }
-
-.main {
-    width: 100vw;
-    margin: 20px 20px 10px 40px;
-}
-
 .hamBurger {
     position: absolute;
     top: 3px;
@@ -71,6 +66,13 @@
 .cross {
     margin-left: 115px;
     margin-top: 5px;
+}
+
+/* MAIN CONTENT */
+
+.main {
+    width: 100vw;
+    margin: 20px 20px 10px 40px;
 }
 
 .projectsContainer {
@@ -169,7 +171,7 @@
         height: 2000px;
         width: 100vw;
     }
-
+/* SIDEBAR */
     .sidebar {
         height: 2000px;
         width: 50%;
@@ -207,6 +209,7 @@
         width: 18px;
     }
 
+    /* MAIN CONTENT */
     .projectsContainer h1 {
         font-size: 2.5rem;
     }
@@ -225,7 +228,7 @@
         height: 1600px;
         width: 1200px;
     }
-
+    /* SIDEBAR */
     .sidebar { 
         height: 1600px;
         width: 250px; 
@@ -257,6 +260,7 @@
         margin-top: 5px;
         width: 25px;
     }
+    /* MAIN CONTENT */
     .main{
         margin-left: 20vw;
     }
@@ -283,17 +287,18 @@
 
 @media screen and (min-width: 1001px) {
     .container {
-        height: fit-content;
+        height: 900px;
     }
+    /* SIDEBAR */
     .sidebar {
-        height: fit-content; 
-        width: 250px; 
+        height: 900px; 
+        width: 200px; 
         z-index: 2;
     }
     .sidebar nav li {
         list-style: none;
-        font-size: 25px;
-        padding: 40px 10px;
+        font-size: 20px;
+        padding: 20px 10px;
         margin-top: 20px;
     }
     .sidebar nav li a{
@@ -302,40 +307,25 @@
         padding-top: 20px;
     }
     .sidebarGo{
-        transform: translate(-250px, 0px);
+        transform: translate(-200px, 0px);
         position: absolute;
     }
     .ham{
-        width: 35px;
+        width: 30px;
     }
     .cross{
         margin-left: 180px;
         margin-top: 5px;
-        width: 20px;
+        width: 15px;
     }
     .sec{
         z-index: 10;
     }
+    /* MAIN CONTENT */
     .main{
         margin-left: 10vw;
     }
     .projectsContainer h1 {
-        font-size: 2.8rem;
+        font-size: 1.8rem;
     }
-    .projectName h3{
-        font-size: 1.4rem;
-    }
-
-    .projectName p {
-        padding-left: 2rem;
-        font-size: 1.2rem;
-    }
-
-    .projectName a {
-        margin-left: 2rem;
-        width: 30px;
-        height: 30px;
-        font-size: 1.5rem;
-    }
-
 }

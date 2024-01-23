@@ -11,6 +11,7 @@
     height: 551px;
 }
 
+/* SIDEBAR */
 .sidebar {
     background-color: dodgerblue;
     position: absolute;
@@ -49,13 +50,6 @@
     position: absolute;
 }
 
-.main {
-    /* background-color: #98f2bf; */
-    width: 80vw;
-    padding: 0px 10px;
-    margin-left: 12vw;
-}
-
 .hamBurger {
     position: absolute;
     top: 3px;
@@ -77,12 +71,19 @@
     width: 16px;
 }
 
+
+/* MAIN CONTENT */
+.main {
+    width: 80vw;
+    padding: 0px 10px;
+    margin-left: 12vw;
+}
+
 .aboutMe {
     margin: 20px 10px;
     margin-left: 30px;
     opacity: 0;
     animation: slideRight 1s ease forwards;
-    ;
 }
 
 .aboutMe h1 {
@@ -107,7 +108,6 @@
 .Technical-bars {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* background-color: #fff; */
 }
 
 .Technical-bars .bar {
@@ -276,11 +276,12 @@
 }
 
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 690px) {
     .container {
         height: 1200px;
     }
-
+/* SIDEBAR */
     .sidebar {
         height: 1200px;
         width: 50%;
@@ -309,6 +310,8 @@
         margin-left: 150px;
         width: 18px;
     }
+
+    /* MAIN CONTENT */
     .aboutMe{
         font-size: 22px;
     }
@@ -321,6 +324,7 @@
     .container{
         height: 100vh;
     }
+    /* SIDEBAR */
     .sidebar{
         height: 100vh;
         width: 200px;
@@ -332,7 +336,7 @@
         margin-top: 20px;
     }
 
-    .sidebarnav li a {
+    .sidebar nav li a {
         padding-top: 10px;
     }
     .sidebarGo{

@@ -12,6 +12,7 @@
     height: 551px;
 }
 
+/* SIDEBAR */
 .sidebar {
     background-color: #8d99ae;
     position: absolute;
@@ -30,12 +31,13 @@
     font-size: 20px;
     padding: 25px 0;
 }
-.sidebar nav li a{
+
+.sidebar nav li a {
     text-decoration: none;
     color: rgb(10, 9, 9);
 }
 
-.sidebar nav li a:hover{
+.sidebar nav li a:hover {
     cursor: pointer;
     font-size: 22px;
     transition: 0.3s ease;
@@ -43,41 +45,40 @@
     text-shadow: 0 0 20px black;
 }
 
-.sidebarGo{
+.sidebarGo {
     transform: translate(-159px, 0px);
     position: absolute;
 }
-.main {
-    /* background-color: #98f2bf; */
-    width: 100vw;
-    padding: 0px 10px;
-}
 
-.hamBurger{
+.hamBurger {
     position: absolute;
     top: 3px;
     left: 1px;
     background: none;
     cursor: pointer;
 }
-.ham{
+
+.ham {
     margin-left: 10px;
     background-color: #e5e5e5;
     border-radius: 4px;
 
 }
-.cross{
+
+.cross {
     margin-left: 130px;
     margin-top: 5px;
-    /* top: 5px; */
+}
 
+
+/* MAIN CONTENT */
+.main {
+    width: 100vw;
+    padding: 0px 10px;
 }
 
 .info-container {
     display: flex;
-    /* height: 55vh; */
-    /* width: 80vw; */
-    /* background-color: rgb(16, 69, 69); */
     margin: auto;
     margin-top: 120px;
     padding-left: 8rem;
@@ -90,7 +91,6 @@
     flex-direction: column;
     justify-content: center;
     font-family: "Noto Serif", serif;
-    /* background-color: rgb(231, 71, 71); */
     width: 60%;
     padding-left: 3rem;
 }
@@ -115,17 +115,17 @@
     font-family: 'Mulish', sans-serif;
     opacity: 0;
     animation: slideTop 1s ease forwards;
-    text-shadow: 0 0 3px ;
+    text-shadow: 0 0 3px;
 }
 
 
-.more-about{
-    margin: 15px 0 ;
+.more-about {
+    margin: 15px 0;
     font-size: 15px;
     width: 480px;
 }
 
-.buttons{
+.buttons {
     margin-top: 15px;
     opacity: 0;
     animation: slideRight 1s ease forwards;
@@ -144,14 +144,14 @@
     box-shadow: 2px 3px 5px black;
 }
 
-.buttons button:hover{
+.buttons button:hover {
     color: dodgerblue;
     background-color: #fffff0;
     box-shadow: 0 0 20px dodgerblue;
     transition: 0.3s ease;
 }
 
-.logo a{
+.logo a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -168,16 +168,16 @@
     animation: slideRight 1s ease forwards;
 }
 
-.logo a:hover{
-    background:dodgerblue;
+.logo a:hover {
+    background: dodgerblue;
     color: #fffff0;
     box-shadow: 0 0 20px dodgerblue;
 }
 
 
-.div-img{
+.div-img {
     height: 300px;
-    width: 300px; 
+    width: 300px;
     border: 2px solid rgba(49, 45, 3, 0.048);
     background-color: grey;
     box-shadow: 0px 0px 50px dodgerblue;
@@ -191,64 +191,75 @@
 }
 
 @keyframes slideRight {
-    0%{
+    0% {
         transform: translateX(-100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0px);
         opacity: 1;
     }
 }
+
 @keyframes slideTop {
-    0%{
+    0% {
         transform: translateY(-100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateY(0px);
         opacity: 1;
     }
 }
 
-@media screen and (max-width: 549px){
+@media screen and (max-width: 549px) {
     .container {
         height: 1200px;
         width: fit-content;
     }
+
+    /* SIDEBAR */
     .sidebar {
-        height: 1200px; 
-        width: 50%; 
+        height: 1200px;
+        width: 50%;
         z-index: 2;
     }
+
     .sidebar nav li {
         list-style: none;
         font-size: 26px;
         padding: 50px 10px;
         margin-top: 20px;
     }
-    .sidebar nav li a{
+
+    .sidebar nav li a {
         text-decoration: none;
-        color: rgb(10, 9, 9);  
+        color: rgb(10, 9, 9);
         padding-top: 20px;
     }
-    .sidebarGo{
+
+    .sidebarGo {
         transform: translate(-260px, 0px);
         position: absolute;
     }
-    .sec{
+
+    .sec {
         z-index: 10;
     }
-    .ham{
+
+    .ham {
         width: 30px;
         background-color: dodgerblue;
     }
-    .cross{
+
+    .cross {
         margin-left: 160px;
         width: 18px;
     }
 
-
+    /* MAIN CONTENT */
     .info-container {
         display: flex;
         flex-direction: column;
@@ -263,39 +274,45 @@
         gap: 1rem;
         width: fit-content;
     }
+
     .hello {
         font-size: 60px;
     }
+
     .name {
         font-size: 40px;
         font-weight: bold;
     }
+
     .about {
         font-size: 28px;
     }
-    
-    .more-about{
-        margin: 15px 0 ;
+
+    .more-about {
+        margin: 15px 0;
         font-size: 20px;
         width: 250px;
     }
-    .buttons{
+
+    .buttons {
         margin: 2rem 0;
     }
-    
+
     .buttons button {
         padding: 10px 10px;
         border-radius: 15px;
         font-size: 15px;
     }
-    .div-img{
+
+    .div-img {
         height: 300px;
-        width: 300px; 
+        width: 300px;
         margin-top: 5rem;
         margin-left: 0.7rem;
         margin-bottom: 0.5rem;
     }
-    .logo a:nth-child(1n){
+
+    .logo a:nth-child(1n) {
         width: 40px;
         height: 40px;
         font-size: 25px;
@@ -303,43 +320,50 @@
 }
 
 
-@media  screen and (min-width : 550px) and (max-width : 1000px){
+@media screen and (min-width : 550px) and (max-width : 1000px) {
     .container {
         height: 1600px;
         width: 1100px;
     }
 
-    .sidebar { 
+    /* SIDEBAR */
+    .sidebar {
         height: 1600px;
-        width: 250px; 
+        width: 250px;
     }
+
     .sidebar nav li {
         list-style: none;
         font-size: 30px;
         padding: 50px 10px;
         margin-top: 20px;
     }
-    .sidebar nav li a{
+
+    .sidebar nav li a {
         text-decoration: none;
-        color: rgb(10, 9, 9);  
+        color: rgb(10, 9, 9);
         padding-top: 20px;
     }
-    .sidebarGo{
+
+    .sidebarGo {
         transform: translate(-250px, 0px);
         position: absolute;
     }
-    .ham{
+
+    .ham {
         margin-left: 10px;
         background-color: dodgerblue;
         border-radius: 4px;
         width: 50px;
     }
-    .cross{
+
+    .cross {
         margin-left: 180px;
         margin-top: 5px;
         width: 20px;
     }
-    
+
+    /* MAIN CONTENT */
     .info-container {
         display: flex;
         flex-direction: column;
@@ -354,42 +378,47 @@
         gap: 1.1rem;
         width: 100vw;
     }
+
     .hello {
         font-size: 80px;
     }
+
     .name {
         font-size: 60px;
         font-weight: bold;
     }
+
     .about {
         font-size: 40px;
     }
-    
-    .more-about{
-        margin: 15px 0 ;
+
+    .more-about {
+        margin: 15px 0;
         font-size: 20px;
-        /* width: 350px; */
     }
-    .buttons{
+
+    .buttons {
         margin: 2rem 0;
     }
-    
+
     .buttons button {
         padding: 14px 17px;
         border-radius: 15px;
         font-size: 20px;
     }
 
-    .div-img{
+    .div-img {
         height: 400px;
-        width: 400px; 
+        width: 400px;
         margin-top: 6rem;
         margin-left: 1rem;
     }
-    .logo{
+
+    .logo {
         margin-left: 1rem;
     }
-    .logo a:nth-child(1n){
+
+    .logo a:nth-child(1n) {
         width: 50px;
         height: 50px;
         font-size: 30px;
@@ -402,72 +431,86 @@
         height: 100vh;
         width: 100vw;
     }
+
+    /* SIDEBAR */
     .sidebar {
-        height: 100vh; 
-        width: 200px; 
+        height: 100vh;
+        width: 200px;
     }
+
     .sidebar nav li {
         list-style: none;
         font-size: 22px;
         padding: 20px 10px;
         margin-top: 20px;
     }
-    .sidebar nav li a{
+
+    .sidebar nav li a {
         text-decoration: none;
-        color: rgb(10, 9, 9);  
+        color: rgb(10, 9, 9);
         padding-top: 20px;
     }
-    .sidebarGo{
+
+    .sidebarGo {
         transform: translate(-200px, 0px);
         position: absolute;
     }
-    .ham{
+
+    .ham {
         margin-left: 10px;
         background-color: dodgerblue;
         border-radius: 4px;
         width: 30px;
     }
-    .cross{
+
+    .cross {
         margin-left: 170px;
         margin-top: 5px;
         width: 15px;
     }
+
+    /* MAIN CONTENT */
     .info-container {
         display: flex;
         margin-left: 2rem;
     }
-    .div-info{
+
+    .div-info {
         gap: 0.6rem;
     }
+
     .hello {
         font-size: 50px;
     }
+
     .name {
         font-size: 40px;
         font-weight: bold;
     }
+
     .about {
         font-size: 25px;
     }
-    
-    .more-about{
-        margin: 15px 0 ;
+
+    .more-about {
+        margin: 15px 0;
         font-size: 14px;
         width: 400px;
     }
-    
+
     .buttons button {
         padding: 8px 13px;
         border-radius: 15px;
         font-size: 14px;
     }
 
-    .div-img{
+    .div-img {
         height: 330px;
-        width: 330px; 
+        width: 330px;
         margin-right: 50px;
     }
-    .logo a:nth-child(1n){
+
+    .logo a:nth-child(1n) {
         width: 40px;
         height: 40px;
         font-size: 23px;

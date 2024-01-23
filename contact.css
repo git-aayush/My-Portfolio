@@ -11,13 +11,14 @@
     height: 551px;
 }
 
+/* SIDEBAR */
 .sidebar {
     background-color: #2BAE66;
     position: absolute;
     font-family: "Noto Serif", serif;
     width: 160px;
     height: 551px;
-    transition: transform 0.2s ease-in;  
+    transition: transform 0.2s ease-in;
 }
 
 .sidebar nav {
@@ -29,48 +30,53 @@
     font-size: 20px;
     padding: 25px 0;
 }
-.sidebar nav li a{
+
+.sidebar nav li a {
     text-decoration: none;
     color: rgb(10, 9, 9);
-    
+
 }
 
-.sidebar nav li a:hover{
+.sidebar nav li a:hover {
     cursor: pointer;
-    font-size: 22px;
+    font-size: 23px;
     transition: 0.3s ease;
     color: whitesmoke;
     text-shadow: 0px 0px 20px black;
 }
 
-.sidebarGo{
+.sidebarGo {
     transform: translate(-159px, 0px);
     position: absolute;
 }
-.main {
-    /* background-color: #98f2bf; */
-    width: 100vw;
-    padding: 0px 10px;
-}
 
-.hamBurger{
+.hamBurger {
     position: absolute;
     top: 3px;
     left: 1px;
     background: none;
     cursor: pointer;
 }
-.ham{
+
+.ham {
     margin-left: 5px;
     background-color: #2BAE66;
     border-radius: 4px;
 }
-.cross{
+
+.cross {
     margin-left: 120px;
     margin-top: 5px;
 }
 
-.contact{
+/* MAIN CONTENT */
+
+.main {
+    width: 100vw;
+    padding: 0px 10px;
+}
+
+.contact {
     margin-top: 20px;
     margin-left: 40px;
     width: 80vw;
@@ -80,26 +86,27 @@
     font-family: 'Mulish', sans-serif;
 }
 
-.query-head{
+.query-head {
     text-align: center;
     opacity: 0;
     animation: slideRight 1.2s linear forwards;
 }
 
-.query-form{
+.query-form {
     margin-top: 2rem;
     opacity: 0;
     animation: slideTop 1s ease forwards;
-    
-}
-
-.query-form form{
-   display: flex;
-   flex-direction: column;
 
 }
 
-.query-form form input,form textarea{
+.query-form form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.query-form form input,
+form textarea {
     font-family: 'Noto Serif', serif;
     border: none;
     outline: none;
@@ -115,12 +122,13 @@
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
-.query-form textarea{
+
+.query-form textarea {
     resize: none;
     height: 150px;
 }
 
-.query-form form .send{
+.query-form form .send {
     padding: 8px 14px;
     border-radius: 12px;
     width: 10rem;
@@ -135,26 +143,26 @@
     box-shadow: 2px 3px 5px black;
 }
 
-.query-form form .send:hover{
+.query-form form .send:hover {
     color: dodgerblue;
     background-color: whitesmoke;
     box-shadow: 0 0 20px dodgerblue;
 }
 
-
-
-.contact-head{
+.contact-head {
     text-align: center;
     margin-bottom: 3rem;
     opacity: 0;
     animation: slideRight 1.2s linear forwards;
 }
-.contact-form-data{
+
+.contact-form-data {
     margin-left: 5rem;
     opacity: 0;
     animation: slideTop 1s ease forwards;
 
 }
+
 .contact-form-data .contact-form-data-icons {
     font-size: 1.3rem;
     margin-right: 10px;
@@ -165,11 +173,11 @@
     animation: slideRight 1s ease forwards;
 }
 
-.contact-form-data span{
+.contact-form-data span {
     font-size: 1.3rem;
     margin-left: 10px;
     margin-bottom: 20px;
-    font-family: 'Roboto Slab', serif; 
+    font-family: 'Roboto Slab', serif;
     opacity: 0;
     animation: slideTop 1s ease forwards;
 }
@@ -181,7 +189,7 @@
     animation: slideRight 1s ease forwards;
 }
 
-.contact-form-data-logo a:first-child{
+.contact-form-data-logo a:first-child {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -196,12 +204,13 @@
     color: #0A66C2;
 }
 
-.contact-form-data-logo a:first-child:hover{
+.contact-form-data-logo a:first-child:hover {
     background-color: #0A66C2;
     color: white;
     box-shadow: 0 0 20px #0A66C2;
 }
-.contact-form-data-logo a:nth-child(2){
+
+.contact-form-data-logo a:nth-child(2) {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -216,28 +225,31 @@
     color: #25D366;
 }
 
-.contact-form-data-logo a:nth-child(2):hover{
+.contact-form-data-logo a:nth-child(2):hover {
     background-color: #25D366;
     color: white;
     box-shadow: 0 0 20px #25D366;
 }
 
 @keyframes slideRight {
-    0%{
+    0% {
         transform: translateX(-100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0);
         opacity: 1;
     }
 }
+
 @keyframes slideTop {
-    0%{
+    0% {
         transform: translateY(-100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateY(0);
         opacity: 1;
     }
@@ -250,6 +262,7 @@
         width: 100vw;
     }
 
+    /* SIDEBAR */
     .sidebar {
         height: 1000px;
         width: 50%;
@@ -286,158 +299,199 @@
         margin-left: 160px;
         width: 18px;
     }
-    .query-head{
+
+    /* MAIN CONTENT */
+    .query-head {
         font-size: 2.5rem;
     }
-    .query-form form .send{
+
+    .query-form form .send {
         margin-left: 20%;
     }
-    .contact{
+
+    .contact {
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
     }
-    .contact-form{
+
+    .contact-form {
         margin-left: 10px;
         margin-top: 4rem;
     }
-    .contact-head{
+
+    .contact-head {
         font-size: 2.5rem;
     }
-    .contact-form-data{
+
+    .contact-form-data {
         margin-left: 0.5rem;
     }
-    .contact-form-data-logo{
+
+    .contact-form-data-logo {
         margin-left: 3rem;
         margin-top: 2rem;
     }
-    .contact-form-data-logo a:nth-child(n){
+
+    .contact-form-data-logo a:nth-child(n) {
         font-size: 25px;
         width: 40px;
         height: 40px;
     }
 }
 
-@media  screen and (min-width : 550px) and (max-width : 1000px){
+@media screen and (min-width : 550px) and (max-width : 1000px) {
     .container {
         height: 1600px;
         width: 1200px;
     }
 
-    .sidebar { 
+    /* SIDEBAR */
+    .sidebar {
         height: 1600px;
-        width: 250px; 
+        width: 250px;
         z-index: 2;
     }
+
     .sidebar nav li {
         list-style: none;
         font-size: 30px;
         padding: 40px 10px;
         margin-top: 20px;
     }
-    .sidebar nav li a{
+
+    .sidebar nav li a {
         text-decoration: none;
-        color: rgb(10, 9, 9);  
+        color: rgb(10, 9, 9);
         padding-top: 20px;
     }
-    .sidebarGo{
+
+    .sidebarGo {
         transform: translate(-250px, 0px);
         position: absolute;
     }
-    .sec{
+
+    .sec {
         z-index: 10;
     }
-    .ham{
+
+    .ham {
         width: 40px;
     }
-    .cross{
+
+    .cross {
         margin-left: 170px;
         margin-top: 5px;
         width: 25px;
     }
-    .main{
+
+    /* MAIN CONTENT */
+    .main {
         margin-left: 10vw;
     }
-    .query-head{
+
+    .query-head {
         font-size: 3rem;
     }
-    .query-form form input,form textarea{
+
+    .query-form form input,
+    form textarea {
         padding: 20px 15px;
         margin: 0.8rem 0;
     }
-    .query-form form .send{
+
+    .query-form form .send {
         font-size: 17px;
         padding: 14px 15px;
     }
-    .contact{
+
+    .contact {
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
     }
-    .contact-form{
+
+    .contact-form {
         margin-top: 4.5rem;
     }
-    .contact-head{
+
+    .contact-head {
         font-size: 3rem;
     }
-    .contact-form-data .contact-form-data-icons{
+
+    .contact-form-data .contact-form-data-icons {
         font-size: 2rem;
     }
-    .contact-form-data span{
-        font-size: 2rem ;
+
+    .contact-form-data span {
+        font-size: 2rem;
     }
-    .contact-form-data-logo{
+
+    .contact-form-data-logo {
         margin-top: 2rem;
     }
-    .contact-form-data-logo a:nth-child(n){
+
+    .contact-form-data-logo a:nth-child(n) {
         font-size: 30px;
         width: 45px;
         height: 45px;
     }
-    
+
 }
 
 @media screen and (min-width: 1001px) {
     .container {
-        height: fit-content;
+        height: 100vh;
     }
+
+    /* SIDEBAR */
     .sidebar {
-        height: fit-content; 
-        width: 250px; 
+        height: 100vh;
+        width: 180px;
         z-index: 2;
     }
+
     .sidebar nav li {
         list-style: none;
-        font-size: 25px;
-        padding: 40px 10px;
+        font-size: 20px;
+        padding: 20px 10px;
         margin-top: 20px;
     }
-    .sidebar nav li a{
+
+    .sidebar nav li a {
         text-decoration: none;
-        color: rgb(10, 9, 9);  
+        color: rgb(10, 9, 9);
         padding-top: 20px;
     }
-    .sidebarGo{
-        transform: translate(-250px, 0px);
+
+    .sidebarGo {
+        transform: translate(-200px, 0px);
         position: absolute;
     }
-    .ham{
-        width: 35px;
+
+    .ham {
+        width: 30px;
     }
-    .cross{
-        margin-left: 180px;
+
+    .cross {
+        margin-left: 150px;
         margin-top: 5px;
-        width: 20px;
+        width: 15px;
     }
-    .sec{
+
+    .sec {
         z-index: 10;
     }
-   .main{
-    margin-left: 10vw;
-   }
-   .query-head{
-    font-size: 2.5rem;
-}
-   .contact-head{
-    font-size: 2.5rem;
-}
+
+    /* MAIN CONTENT */
+    .main {
+        margin-left: 10vw;
+    }
+
+    .query-head {
+        font-size: 2.5rem;
+    }
+
+    .contact-head {
+        font-size: 2.5rem;
+    }
 
 }
