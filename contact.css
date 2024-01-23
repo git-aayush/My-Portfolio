@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Noto+Serif:wght@400;500&family=Roboto+Slab&display=swap");
-/* 
-font-family: 'Mulish', sans-serif;
-font-family: 'Noto Serif', serif;
-font-family: 'Roboto Slab', serif; */
 
 * {
     margin: 0;
@@ -11,16 +7,13 @@ font-family: 'Roboto Slab', serif; */
 
 .container {
     display: flex;
-    /* background-color: #7f7d7d; */
-    /* background-color: #d5d5decb; */
-    /* background-color: #fffff0; */
     background-color: #FCF6F5;
     height: 551px;
 }
 
 .sidebar {
     background-color: #2BAE66;
-    /* position: absolute; */
+    position: absolute;
     font-family: "Noto Serif", serif;
     width: 160px;
     height: 551px;
@@ -75,17 +68,15 @@ font-family: 'Roboto Slab', serif; */
 .cross{
     margin-left: 120px;
     margin-top: 5px;
-    /* top: 5px; */
 }
 
 .contact{
     margin-top: 20px;
     margin-left: 40px;
-    /* background-color: grey; */
     width: 80vw;
     height: 95vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     font-family: 'Mulish', sans-serif;
 }
 
@@ -253,86 +244,200 @@ font-family: 'Roboto Slab', serif; */
 }
 
 
+@media screen and (max-width: 549px) {
+    .container {
+        height: 1000px;
+        width: 100vw;
+    }
 
+    .sidebar {
+        height: 1000px;
+        width: 50%;
+        z-index: 2;
+    }
 
+    .sidebar nav li {
+        list-style: none;
+        font-size: 26px;
+        padding: 50px 10px;
+        margin-top: 20px;
+    }
 
+    .sidebar nav li a {
+        text-decoration: none;
+        color: rgb(10, 9, 9);
+        padding-top: 20px;
+    }
 
+    .sidebarGo {
+        transform: translate(-270px, 0px);
+        position: absolute;
+    }
 
+    .sec {
+        z-index: 10;
+    }
 
+    .ham {
+        width: 30px;
+    }
 
-
-
-
-
-
-
-
-
-
-/* .contact-form {
-    font-family: 'Mulish', sans-serif;
-    padding: 0 30px;
-    padding-top: 40px;
-    margin-left: 20px;
-} */
-/* margin-left: 140px; */
-
-/* .contact-form h1 {
-    font-family: sans-serif;
-    margin-bottom: 20px;
+    .cross {
+        margin-left: 160px;
+        width: 18px;
+    }
+    .query-head{
+        font-size: 2.5rem;
+    }
+    .query-form form .send{
+        margin-left: 20%;
+    }
+    .contact{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .contact-form{
+        margin-left: 10px;
+        margin-top: 4rem;
+    }
+    .contact-head{
+        font-size: 2.5rem;
+    }
+    .contact-form-data{
+        margin-left: 0.5rem;
+    }
+    .contact-form-data-logo{
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+    .contact-form-data-logo a:nth-child(n){
+        font-size: 25px;
+        width: 40px;
+        height: 40px;
+    }
 }
 
-.contact-form form div {
-    margin: 10px 0 ;
-} */
-/* padding: 10px 0; */
+@media  screen and (min-width : 550px) and (max-width : 1000px){
+    .container {
+        height: 1600px;
+        width: 1200px;
+    }
 
-/* .email-text {
-    font-size: 8px;
-    color: midnightblue;
-
+    .sidebar { 
+        height: 1600px;
+        width: 250px; 
+        z-index: 2;
+    }
+    .sidebar nav li {
+        list-style: none;
+        font-size: 30px;
+        padding: 40px 10px;
+        margin-top: 20px;
+    }
+    .sidebar nav li a{
+        text-decoration: none;
+        color: rgb(10, 9, 9);  
+        padding-top: 20px;
+    }
+    .sidebarGo{
+        transform: translate(-250px, 0px);
+        position: absolute;
+    }
+    .sec{
+        z-index: 10;
+    }
+    .ham{
+        width: 40px;
+    }
+    .cross{
+        margin-left: 170px;
+        margin-top: 5px;
+        width: 25px;
+    }
+    .main{
+        margin-left: 10vw;
+    }
+    .query-head{
+        font-size: 3rem;
+    }
+    .query-form form input,form textarea{
+        padding: 20px 15px;
+        margin: 0.8rem 0;
+    }
+    .query-form form .send{
+        font-size: 17px;
+        padding: 14px 15px;
+    }
+    .contact{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .contact-form{
+        margin-top: 4.5rem;
+    }
+    .contact-head{
+        font-size: 3rem;
+    }
+    .contact-form-data .contact-form-data-icons{
+        font-size: 2rem;
+    }
+    .contact-form-data span{
+        font-size: 2rem ;
+    }
+    .contact-form-data-logo{
+        margin-top: 2rem;
+    }
+    .contact-form-data-logo a:nth-child(n){
+        font-size: 30px;
+        width: 45px;
+        height: 45px;
+    }
+    
 }
 
-.mb-3 {
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 1001px) {
+    .container {
+        height: fit-content;
+    }
+    .sidebar {
+        height: fit-content; 
+        width: 250px; 
+        z-index: 2;
+    }
+    .sidebar nav li {
+        list-style: none;
+        font-size: 25px;
+        padding: 40px 10px;
+        margin-top: 20px;
+    }
+    .sidebar nav li a{
+        text-decoration: none;
+        color: rgb(10, 9, 9);  
+        padding-top: 20px;
+    }
+    .sidebarGo{
+        transform: translate(-250px, 0px);
+        position: absolute;
+    }
+    .ham{
+        width: 35px;
+    }
+    .cross{
+        margin-left: 180px;
+        margin-top: 5px;
+        width: 20px;
+    }
+    .sec{
+        z-index: 10;
+    }
+   .main{
+    margin-left: 10vw;
+   }
+   .query-head{
+    font-size: 2.5rem;
+}
+   .contact-head{
+    font-size: 2.5rem;
 }
 
-.mb-3 label {
-    font-size: 17px;
 }
-
-.email-address {
-    width: 25vw;
-    border-radius: 4px;
-    padding: 2px;
-}
-
-.ph-number {
-    width: 25vw;
-    border-radius: 3px;
-    padding: 2px;
-}
-
-form .form-check{
-    padding: 6px 0;
-}
-
-.btn-sm{
-    width: 80px;
-    padding: 5px 4px;
-    border-radius: 15px;
-    font-size: 15px;
-    cursor: pointer;
-    border: 1px solid rgb(8, 7, 7);
-    background-color: dodgerblue;
-    color: rgb(244, 253, 253);
-    margin: 10px 2px;
-    box-shadow: 2px 2px 8px black;
-}
-
-.btn-sm:hover{
-    color: dodgerblue;
-    background-color: white
-
-} */
