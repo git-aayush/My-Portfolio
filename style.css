@@ -393,13 +393,13 @@ font-family: 'Roboto Slab', serif; */
     /* SIDEBAR */
     .sidebar {
         height: 1600px;
-        width: 200px;
+        width: 250px;
     }
 
     .sidebar nav li {
         list-style: none;
-        font-size: 25px;
-        padding: 30px 10px;
+        font-size: 30px;
+        padding: 50px 10px;
         margin-top: 20px;
     }
 
@@ -410,7 +410,7 @@ font-family: 'Roboto Slab', serif; */
     }
 
     .sidebarGo {
-        transform: translate(-200px, 0px);
+        transform: translate(-250px, 0px);
         position: absolute;
     }
 
@@ -418,11 +418,11 @@ font-family: 'Roboto Slab', serif; */
         margin-left: 10px;
         background-color: #EE4E34;
         border-radius: 4px;
-        width: 35px;
+        width: 40px;
     }
 
     .cross {
-        margin-left: 170px;
+        margin-left: 180px;
         margin-top: 5px;
         width: 20px;
     }
@@ -432,7 +432,7 @@ font-family: 'Roboto Slab', serif; */
         display: flex;
         flex-direction: column;
         margin-top: 70px;
-        margin-left: 6rem;
+        margin-left: 8rem;
     }
 
     .div-info {
